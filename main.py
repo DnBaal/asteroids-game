@@ -1,7 +1,7 @@
 import sys
 import pygame
-from asteroidfield import AsteroidField
 from constants import *
+from asteroidfield import AsteroidField
 from player import Player
 from asteroid import Asteroid
 from shot import Shot
@@ -42,6 +42,11 @@ def main():
             if asteroid.collides_with(player):
                 print("Game over!")
                 sys.exit()
+
+            for shot in shots:
+                if asteroid.collides_with(shot):
+                    shot.kill()
+                    asteroid.split()
 
         screen.fill(color="Black")
 

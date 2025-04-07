@@ -1,3 +1,3 @@
 # asteroids-game
 
-Asteroids game is my first [Boot.dev](https://www.boot.dev) project!
+Asteroids game is my [Boot.dev](https://www.boot.dev) project.
